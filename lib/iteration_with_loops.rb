@@ -8,7 +8,6 @@ def find_min_in_nested_arrays(src)
       element_index = 0
       while element_index < src[row_index].count
         weather_temp = 0
-        binding.pry
         if src[row_index][element_index] < weather_temp
         binding.pry
         weather_temp = src[row_index][element_index]
