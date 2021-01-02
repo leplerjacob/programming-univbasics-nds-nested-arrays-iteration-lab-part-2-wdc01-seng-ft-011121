@@ -1,4 +1,5 @@
 def find_min_in_nested_arrays(src)
+  
   # src will be an array of arrays of integers
   # Produce a new Array that contains the smallest number of each of the nested arrays
   lowest_temps_array = []
@@ -6,6 +7,8 @@ def find_min_in_nested_arrays(src)
     while row_index < src.count
       element_index = 0
       while element_index < src[row_index].count
+      
+        binding.pry
         weather_temp = 0
         if src[row_index][element_index] < weather_temp
         weather_temp = src[row_index][element_index]
@@ -14,9 +17,19 @@ def find_min_in_nested_arrays(src)
         element_index += 1
     end
     row_index += 1
+  end
+  lowest_temps_array
+  
 end
-lowest_temps_array
-end
+
+
+
+
+
+
+
+
+
 # def find_min_in_nested_arrays(src)
 #   # src will be an array of arrays of integers
 #   # Produce a new Array that contains the smallest number of each of the nested arrays
